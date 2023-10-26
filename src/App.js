@@ -1,7 +1,6 @@
 import React from 'react';
-// import Navigation from './Navigation';
 import Navigation from './components/Navigation';
-import HomePage from './components/HomePage';
+import HomePage from './components/HomePage';  // Moved HomePage here
 import ServicesPage from './components/Services';
 import EducationPage from './components/Education';
 import ContactPage from './components/Contact';
