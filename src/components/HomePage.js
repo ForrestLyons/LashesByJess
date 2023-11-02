@@ -16,27 +16,52 @@ display: flex;
 `;
 
 const AttentionDiv = styled.div`
+  width: 700px;
   text-align: center;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 `;
 const Heading5 = styled.h5`
+  opacity: 0.8;
+  color: #f2f2f2;
   font-size: 24px;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
   display: inline-block;
-  padding: 0 20px;
+  position: relative;
+  padding: 0 30px;
+  margin: 0 10px;
+  overflow-wrap: break-word; /* Use overflow-wrap instead of word-wrap */
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #000;
+    width: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: -30px;
+  }
+
+  &::after {
+    right: -30px;
+  }
 `;
 const Heading1 = styled.h1`
-  font-size: 48px;
+opacity: .8;
+color: #f2f2f2;
+  font-size: 50px;
   margin-top: 20px;
+
 `;
 
 const Paragraph = styled.p`
+  opacity: .8;
+  color: #f2f2f2;
   font-size: 14px;
-  margin-top: 30px;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
 `;
 
 const ButtonsContainer = styled.div`
@@ -44,10 +69,24 @@ const ButtonsContainer = styled.div`
   justify-content: center;
   margin-top: 30px;
 `;
-const Button = styled.button`
+const BookNowButton = styled.button`
   margin: 0 10px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 14px;
+  background-color: #ffcc99;
+  border: none;
+  width: 150px;
+`;
+
+const LearnMoreButton = styled.button`
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color:white;
+  background-color: black;
+  border: 2px solid white;
+  width: 150px;
+  opacity: 0.8;
 `;
 
 
@@ -56,16 +95,13 @@ const HomePage = () => {
     <HomePageContainer>
       <AttentionDiv>
         <Heading5>Attention-Grabbing Heading</Heading5>
-        <Heading1>Big Bold Heading</Heading1>
+        <Heading1>Enhance your look with our stunning lash extensions</Heading1>
         <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </Paragraph>
-        <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Our professional techniques will change the way you feel about yourself
         </Paragraph>
         <ButtonsContainer>
-          <Button>Book Now</Button>
-          <Button>Learn More</Button>
+          <BookNowButton>Book Now</BookNowButton>
+          <LearnMoreButton>Learn More</LearnMoreButton>
         </ButtonsContainer>
       </AttentionDiv>
     </HomePageContainer>

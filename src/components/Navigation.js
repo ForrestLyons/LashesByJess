@@ -26,8 +26,9 @@ const NavLink = styled.a`
   color: #fff;
   text-decoration: none;
   padding: 10px 15px;
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 10px;
+  opacity: 0.9;
 
   &::after {
     content: '';
