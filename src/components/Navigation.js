@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import styled from 'styled-components';
 
 const NavBar = styled.nav`
@@ -51,16 +53,19 @@ const NavLink = styled.a`
 
 const Navigation = () => {
   return (
-    <NavBar>
+    <Router>
+      <NavBar>
       <Logo src="/logo.jpg" alt="Logo" />
       <NavLinkContainer>
         <NavLink href="#home">Home</NavLink>
-        <NavLink href="#education">Education</NavLink>
+        <NavLink href="education">Education</NavLink>
         <NavLink href="#services">Services</NavLink>
         <NavLink href="#contact">Contact</NavLink>
         <NavLink href="#booknow">Book Now</NavLink>
       </NavLinkContainer>
     </NavBar>
+    </Router>
+
   );
 }
 

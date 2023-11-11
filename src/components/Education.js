@@ -3,9 +3,13 @@ import styled from 'styled-components';
 import Navigation from './Navigation'; // Assuming this is the path to your Navigation component
 
 const PageWrapper = styled.div`
-  background-color: #fff; /* Set your desired background color */
-  padding: 20px; /* Add some padding for spacing */
+
+  background-color: #black !important; /* Set your desired background color */
+  padding: 20px;
+  height: 100vh;/* Add some padding for spacing */
 `;
+
+
 
 const LogoContainer = styled.div`
   text-align: center; /* Center the logo */
@@ -21,7 +25,7 @@ const Heading1 = styled.h1`
 
 const EducationPage = () => {
   return (
-    <div>
+    <div id="/education">
       <Navigation />
       <PageWrapper>
         <LogoContainer>

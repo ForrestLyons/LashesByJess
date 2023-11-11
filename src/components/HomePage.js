@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Navigation from './Navigation';
+
+
 
 const HomePageContainer = styled.div`
  /* Use rgba for transparency */
@@ -92,7 +95,9 @@ const LearnMoreButton = styled.button`
 
 const HomePage = () => {
   return (
-    <HomePageContainer>
+    <div id = "home">
+      <Navigation />
+      <HomePageContainer>
       <AttentionDiv>
         <Heading5>Attention-Grabbing Heading</Heading5>
         <Heading1>Enhance your look with our stunning lash extensions</Heading1>
@@ -105,6 +110,7 @@ const HomePage = () => {
         </ButtonsContainer>
       </AttentionDiv>
     </HomePageContainer>
+    </div>
   );
 }
 
