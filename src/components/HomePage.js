@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navigation from './Navigation';
+
 
 
 
@@ -96,7 +96,7 @@ const LearnMoreButton = styled.button`
 const HomePage = () => {
   return (
     <div id = "home">
-      <Navigation />
+
       <HomePageContainer>
       <AttentionDiv>
         <Heading5>Attention-Grabbing Heading</Heading5>

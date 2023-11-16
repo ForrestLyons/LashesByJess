@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 
 import styled from 'styled-components';
+
 
 const NavBar = styled.nav`
   background-color: transparent; /* Set the background color to transparent */
@@ -23,7 +24,7 @@ const NavLinkContainer = styled.div`
   align-items: center;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   position: relative;
   color: #fff;
   text-decoration: none;
@@ -53,18 +54,19 @@ const NavLink = styled.a`
 
 const Navigation = () => {
   return (
-    <Router>
+
       <NavBar>
-      <Logo src="/logo.jpg" alt="Logo" />
-      <NavLinkContainer>
-        <NavLink href="#home">Home</NavLink>
-        <NavLink href="education">Education</NavLink>
-        <NavLink href="#services">Services</NavLink>
-        <NavLink href="#contact">Contact</NavLink>
-        <NavLink href="#booknow">Book Now</NavLink>
-      </NavLinkContainer>
-    </NavBar>
-    </Router>
+        <Logo src="/logo.jpg" alt="Logo" />
+        <NavLinkContainer>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/education">Education</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/booknow">Book Now</NavLink>
+          {/* Add more NavLink components for other pages */}
+        </NavLinkContainer>
+      </NavBar>
+
 
   );
 }

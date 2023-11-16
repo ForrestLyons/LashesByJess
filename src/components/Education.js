@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navigation from './Navigation'; // Assuming this is the path to your Navigation component
+// import Navigation from './Navigation'; // Assuming this is the path to your Navigation component
 
 const PageWrapper = styled.div`
 
@@ -26,7 +26,7 @@ const Heading1 = styled.h1`
 const EducationPage = () => {
   return (
     <div id="/education">
-      <Navigation />
+
       <PageWrapper>
         <LogoContainer>
           <Logo src="/path_to_your_logo.png" alt="Logo" />
