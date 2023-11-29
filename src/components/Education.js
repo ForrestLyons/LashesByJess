@@ -42,7 +42,6 @@ const animate = keyframes`
 `;
 
 const Footer = styled.footer`
-  position: relative;
   max-width: 1075px;
   background: #3586ff;
   min-height: 100px;
@@ -51,30 +50,31 @@ const Footer = styled.footer`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  back
+  position: relative;
 `;
 
 const Waves = styled.div`
-  position: relative;
+
+  height 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
   flex-wrap: wrap;
-  z-index: 0;
+  overflow: hidden;
 `;
 
 const Wave = styled.div`
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url("https://i.ibb.co/wQZVxxk/wave.png");
-  background-size: 900px 100px;
+position: absolute;
+top: 0;  /* Adjust this value */
+left: 0;
+width: 100%;
+height: 20vh;  /* Adjust this value */
+background: url("https://i.ibb.co/wQZVxxk/wave.png");
+background-size: 900px 100px;
 `;
 
-const Wave1 = styled(Wave)`
+const Wave1 = styled(Wave)`im
   z-index: 1000;
   opacity: 1;
   bottom: 0;
@@ -100,7 +100,7 @@ const Wave3 = styled(Wave)`
 
 const Wave4 = styled(Wave)`
   z-index: 999;
-  opacity: 0.7;
+  opacity: 0.4;
   bottom: 20px;
   animation: ${animate} 3s linear infinite;
 `;
@@ -223,7 +223,7 @@ const EducationContent = styled.div`
 const EducationPage = () => {
   return (
 
-    <div id="/education">
+    <div id="education">
       <GlobalStyle />
       <PageWrapper>
         <LogoContainer>
@@ -237,14 +237,12 @@ const EducationPage = () => {
           <p>We are a team​ of certified and licensed beauty industry professionals with one goal in mind: the wellbeing of our clients. We believe that everybody deserves to feel great about the way they look, and our variety of services is suitable for every need. We offer affordable, safe and painless treatments for people of all ages. Our team has been carefully selected and trained, and we only use industry-approved, state-of-the-art technologies. It will be our pleasure to meet – get in touch today!</p>
           <Heading3>My client's well being is first and foremost!</Heading3>
         </EducationContent>
+
+
+
         <Footer>
-        <Waves>
-          <Wave1 />
-          <Wave2 />
-          <Wave3 />
-          <Wave4 />
-        </Waves>
-        <SocialIcons>
+
+          <SocialIcons>
           <SocialIconItem>
             <SocialIconLink href="">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -266,6 +264,13 @@ const EducationPage = () => {
             </SocialIconLink>
           </SocialIconItem>
         </SocialIcons>
+        <Waves>
+          <Wave1 />
+          <Wave2 />
+          <Wave3 />
+          <Wave4 />
+        </Waves>
+
         <Menu>
           <MenuItem><MenuLink href={HomePage}>Home</MenuLink></MenuItem>
           <MenuItem><MenuLink href={EducationPage}>Education</MenuLink></MenuItem>
