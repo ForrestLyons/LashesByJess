@@ -43,7 +43,7 @@ const animate = keyframes`
 
 const Footer = styled.footer`
   max-width: 1075px;
-  background: #3586ff;
+  background: purple;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -62,6 +62,7 @@ const Waves = styled.div`
   margin: 10px 0;
   flex-wrap: wrap;
   overflow: hidden;
+  opacity: 0.2;
 `;
 
 const Wave = styled.div`
@@ -69,7 +70,7 @@ position: absolute;
 top: 0;  /* Adjust this value */
 left: 0;
 width: 100%;
-height: 20vh;  /* Adjust this value */
+height: 40vh;  /* Adjust this value */
 background: url("https://i.ibb.co/wQZVxxk/wave.png");
 background-size: 900px 100px;
 `;
