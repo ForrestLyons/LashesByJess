@@ -67,10 +67,10 @@ const Waves = styled.div`
 
 const Wave = styled.div`
 position: absolute;
-top: 0;  /* Adjust this value */
+top: 20;  /* Adjust this value */
 left: 0;
 width: 100%;
-height: 40vh;  /* Adjust this value */
+height: 5vh;  /* Adjust this value */
 background: url("https://i.ibb.co/wQZVxxk/wave.png");
 background-size: 900px 100px;
 `;
