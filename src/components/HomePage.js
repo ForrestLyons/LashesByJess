@@ -23,9 +23,9 @@ const AttentionDiv = styled.div`
   text-align: center;
 `;
 const Heading5 = styled.h5`
-  opacity: 0.8;
+  font-weight: 200;
   color: #f2f2f2;
-  font-size: 24px;
+  font-size: 20px;
   display: inline-block;
   position: relative;
   padding: 0 30px;
@@ -51,10 +51,10 @@ const Heading5 = styled.h5`
   }
 `;
 const Heading1 = styled.h1`
-font-family: cursive;
+font-weight: 200;
 opacity: .7;
 color: #f2f2f2;
-  font-size: 50px;
+  font-size: 30px;
   margin-top: 20px;
 
 `;

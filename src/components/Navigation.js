@@ -6,13 +6,15 @@ import styled from 'styled-components';
 
 const NavBar = styled.nav`
   background-color: transparent; /* Set the background color to transparent */
-  padding: 10px 20px;
+  padding: 35px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed; /* Fixed position to keep the navbar at the top */
   width: 100%; /* Make the navbar span the entire width */
   z-index: 2; /* Set a higher z-index to ensure it's on top of the content */
+  top: 0;
+  left: 0;
 `;
 
 const Logo = styled.img`
@@ -22,6 +24,7 @@ const Logo = styled.img`
 const NavLinkContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-right: 60px;
 `;
 
 const NavLink = styled(Link)`
@@ -29,9 +32,10 @@ const NavLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 18px;
+
   margin-right: 10px;
-  opacity: 0.9;
+
 
   &::after {
     content: '';
