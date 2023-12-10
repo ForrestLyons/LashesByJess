@@ -51,7 +51,8 @@ const Heading5 = styled.h5`
   }
 `;
 const Heading1 = styled.h1`
-opacity: .8;
+font-family: cursive;
+opacity: .7;
 color: #f2f2f2;
   font-size: 50px;
   margin-top: 20px;
@@ -59,9 +60,9 @@ color: #f2f2f2;
 `;
 
 const Paragraph = styled.p`
-  opacity: .8;
+  opacity: .9;
   color: #f2f2f2;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin: 0 auto;
   width: 300px;

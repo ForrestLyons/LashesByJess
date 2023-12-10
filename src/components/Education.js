@@ -43,7 +43,7 @@ const animate = keyframes`
 
 const Footer = styled.footer`
   max-width: 1075px;
-  background: purple;
+  background: pink;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -51,6 +51,7 @@ const Footer = styled.footer`
   align-items: center;
   flex-direction: column;
   position: relative;
+  border-radius: 10px;
 `;
 
 const Waves = styled.div`
@@ -187,14 +188,16 @@ const Logo = styled.img`
 
 
 const Heading2 = styled.h2`
-  font-size: 55px;
+  font-size: 75px;
+  font-weight: 200;
   text-align: left;
   border-bottom: 2px solid #B76E79;
   margin-bottom: 60px;
 `;
 const Heading3 = styled.h2`
   color: #dfb3ae;
-  font-size: 55px;
+  font-weight: 200;
+  font-size: 80px;
   text-align: center;
   margin-bottom: 60px;
 `;
@@ -217,6 +220,8 @@ const ParallaxWrapper = styled.div`
 const EducationContent = styled.div`
   /* Add styling for the content after the ParallaxWrapper */
   padding: 20px;
+  font-weight: 600;
+  font-size: 30px;
 `;
 
 
