@@ -8,6 +8,7 @@ import ServicesPage from './Services';
 
 const GlobalStyle = styled.div`
   * {
+    background-color: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +17,7 @@ const GlobalStyle = styled.div`
 
   body {
     display: flex;
-    background: #333;
+
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 100vh;
@@ -168,6 +169,8 @@ const Copyright = styled.p`
 `;
 
 const PageWrapper = styled.div`
+
+
   max-width: 1075px;
   margin: 0 auto;
   padding: 16px;
@@ -223,6 +226,11 @@ const EducationContent = styled.div`
   font-weight: 600;
   font-size: 30px;
 `;
+const Content = styled.div`
+  /* Add styling for the content after the ParallaxWrapper */
+  width: 100%;
+  background-color: pink;
+`;
 
 
 
@@ -230,7 +238,11 @@ const EducationPage = () => {
   return (
 
     <div id="education">
+
       <GlobalStyle />
+      <Content>
+
+
       <PageWrapper>
         <LogoContainer>
           <Logo src="/path_to_your_logo.png" alt="Logo" />
@@ -287,6 +299,7 @@ const EducationPage = () => {
         <Copyright>&copy;2021 Nadine Coelho | All Rights Reserved</Copyright>
       </Footer>
       </PageWrapper>
+      </Content>
     </div>
   );
 };

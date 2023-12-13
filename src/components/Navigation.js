@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 const NavBar = styled.nav`
-  background-color: transparent; /* Set the background color to transparent */
+  background-color: background: rgba(0, 0, 0, 0.5); /* Set the background color to transparent */
   padding: 35px 20px;
   display: flex;
   justify-content: space-between;
