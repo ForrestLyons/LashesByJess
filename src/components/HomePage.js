@@ -1,27 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
-
 const HomePageContainer = styled.div`
- /* Use rgba for transparency */
-background-image: url('/woman.jpg'); /* Set the background image path */
-background-size: cover;
-background-position: center;
-opacity: .8; /* Set the opacity value here (0.0 to 1.0) */
-height: 100vh;
-display: flex;
+  background-image: url('/woman.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  min-height: 75vh; /* Set a minimum height to cover the viewport */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 300px;
+  /* Hide the overflow to prevent scrolling */
 `;
 
 const AttentionDiv = styled.div`
   width: 700px;
   text-align: center;
+  margin-top: -400px;
 `;
+
 const Heading5 = styled.h5`
   font-weight: 200;
   color: #f2f2f2;
@@ -30,7 +30,7 @@ const Heading5 = styled.h5`
   position: relative;
   padding: 0 30px;
   margin: 0 10px;
-  overflow-wrap: break-word; /* Use overflow-wrap instead of word-wrap */
+  overflow-wrap: break-word;
 
   &::before,
   &::after {
@@ -49,18 +49,18 @@ const Heading5 = styled.h5`
   &::after {
     right: -30px;
   }
-`;
+}`;
+
 const Heading1 = styled.h1`
-font-weight: 200;
-opacity: .7;
-color: #f2f2f2;
+  font-weight: 200;
+  opacity: 0.7;
+  color: #f2f2f2;
   font-size: 30px;
   margin-top: 20px;
-
 `;
 
 const Paragraph = styled.p`
-  opacity: .9;
+  opacity: 0.9;
   color: #f2f2f2;
   font-size: 16px;
   text-align: center;
@@ -73,6 +73,7 @@ const ButtonsContainer = styled.div`
   justify-content: center;
   margin-top: 30px;
 `;
+
 const BookNowButton = styled.button`
   margin: 0 10px;
   padding: 10px 20px;
@@ -86,12 +87,13 @@ const LearnMoreButton = styled.button`
   margin: 0 10px;
   padding: 10px 20px;
   font-size: 14px;
-  color:white;
+  color: white;
   background-color: black;
   border: 2px solid white;
   width: 150px;
   opacity: 0.8;
 `;
+
 
 
 const HomePage = () => {

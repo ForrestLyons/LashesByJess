@@ -5,7 +5,8 @@ import styled from 'styled-components';
 
 
 const NavBar = styled.nav`
-  background-color: background: rgba(0, 0, 0, 0.5); /* Set the background color to transparent */
+  height: 60px;
+  background-color: black; /* Set the background color to transparent */
   padding: 35px 20px;
   display: flex;
   justify-content: space-between;
@@ -15,10 +16,13 @@ const NavBar = styled.nav`
   z-index: 2; /* Set a higher z-index to ensure it's on top of the content */
   top: 0;
   left: 0;
+
 `;
 
-const Logo = styled.img`
+const Paragraph = styled.p`
   height: 30px;
+  color: white;
+  font-size: 35px;
 `;
 
 const NavLinkContainer = styled.div`
@@ -60,13 +64,13 @@ const Navigation = () => {
   return (
 
       <NavBar>
-        <Logo src="/logo.jpg" alt="Logo" />
+        <Paragraph>LASHES BY JESS</Paragraph>
         <NavLinkContainer>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/education">Education</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/services">Services</NavLink>
-          <NavLink to="/booknow">Book Now</NavLink>
+          <NavLink to="/booknow">BOOK NOW</NavLink>
           {/* Add more NavLink components for other pages */}
         </NavLinkContainer>
       </NavBar>

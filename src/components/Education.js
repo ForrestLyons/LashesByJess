@@ -6,23 +6,7 @@ import ContactPage from './Contact';
 import ServicesPage from './Services';
 
 
-const GlobalStyle = styled.div`
-  * {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
 
-  body {
-    display: flex;
-
-    justify-content: flex-end;
-    align-items: flex-end;
-    min-height: 100vh;
-  }
-`;
 
 const animateWaves = keyframes`
   0% {
@@ -43,8 +27,9 @@ const animate = keyframes`
 `;
 
 const Footer = styled.footer`
+
   max-width: 1075px;
-  background: pink;
+  background: pink transparent;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -65,6 +50,7 @@ const Waves = styled.div`
   flex-wrap: wrap;
   overflow: hidden;
   opacity: 0.2;
+
 `;
 
 const Wave = styled.div`
@@ -75,6 +61,7 @@ width: 100%;
 height: 5vh;  /* Adjust this value */
 background: url("https://i.ibb.co/wQZVxxk/wave.png");
 background-size: 900px 100px;
+
 `;
 
 const Wave1 = styled(Wave)`im
@@ -169,11 +156,10 @@ const Copyright = styled.p`
 `;
 
 const PageWrapper = styled.div`
+  padding-top: 250px;
 
-
-  max-width: 1075px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 16px;
   height: 100vh;
   text-align: center;
   font-size: 20px;
@@ -182,36 +168,44 @@ const PageWrapper = styled.div`
 
 const LogoContainer = styled.div`
   text-align: center;
+
 `;
 
 const Logo = styled.img`
-  height: 100px;
+  height: 150px;
+  margin-bottom: -25px;
+
+
+
+
 `;
 
 
 
 const Heading2 = styled.h2`
+
   font-size: 75px;
   font-weight: 200;
-  text-align: left;
-  border-bottom: 2px solid #B76E79;
-  margin-bottom: 60px;
+  text-align: center;
+  border-bottom: 2px dashed #B76E79;
+
 `;
-const Heading3 = styled.h2`
-  color: #dfb3ae;
-  font-weight: 200;
+const Heading3 = styled.h3`
+
+  font-weight: 400;
   font-size: 80px;
   text-align: center;
-  margin-bottom: 60px;
+
 `;
 
 const ParallaxWrapper = styled.div`
   height: 400px;
+  border-radius: 10px;
   background: url('/learning.jpg') center/cover no-repeat;
   background-attachment: fixed;
   &::before {
     content: '';
-    display: block;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -222,42 +216,45 @@ const ParallaxWrapper = styled.div`
 
 const EducationContent = styled.div`
   /* Add styling for the content after the ParallaxWrapper */
-  padding: 20px;
-  font-weight: 600;
   font-size: 30px;
 `;
-const Content = styled.div`
-  /* Add styling for the content after the ParallaxWrapper */
+
+
+const MainDiv = styled.div`
+background-color: #FAC0D5;
   width: 100%;
-  background-color: pink;
-`;
+  height: 178vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
 
+`
+const Paragraph = styled.p`
+font-weight: 600;
+
+`
 
 const EducationPage = () => {
   return (
 
-    <div id="education">
+    <MainDiv id="education">
 
-      <GlobalStyle />
-      <Content>
+
+
 
 
       <PageWrapper>
         <LogoContainer>
-          <Logo src="/path_to_your_logo.png" alt="Logo" />
+          <Logo src="/eyelash.png" alt="eyelash" />
         </LogoContainer>
         <Heading2>Education</Heading2>
-        {/* Add your education details here */}
+
         <ParallaxWrapper />
         <EducationContent>
-          {/* Content that can be scrolled */}
-          <p>We are a team​ of certified and licensed beauty industry professionals with one goal in mind: the wellbeing of our clients. We believe that everybody deserves to feel great about the way they look, and our variety of services is suitable for every need. We offer affordable, safe and painless treatments for people of all ages. Our team has been carefully selected and trained, and we only use industry-approved, state-of-the-art technologies. It will be our pleasure to meet – get in touch today!</p>
+          <Paragraph>We are a team​ of certified and licensed beauty industry professionals with one goal in mind: the wellbeing of our clients. We believe that everybody deserves to feel great about the way they look, and our variety of services is suitable for every need. We offer affordable, safe and painless treatments for people of all ages. Our team has been carefully selected and trained, and we only use industry-approved, state-of-the-art technologies. It will be our pleasure to meet – get in touch today!</Paragraph>
           <Heading3>My client's well being is first and foremost!</Heading3>
         </EducationContent>
-
-
-
         <Footer>
 
           <SocialIcons>
@@ -299,8 +296,8 @@ const EducationPage = () => {
         <Copyright>&copy;2021 Nadine Coelho | All Rights Reserved</Copyright>
       </Footer>
       </PageWrapper>
-      </Content>
-    </div>
+
+    </MainDiv>
   );
 };
 
