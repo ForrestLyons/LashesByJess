@@ -29,7 +29,7 @@ const animate = keyframes`
 const Footer = styled.footer`
 
   max-width: 1075px;
-  background: pink transparent;
+  background: #FAC0D5;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
