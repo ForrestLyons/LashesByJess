@@ -221,7 +221,7 @@ const EducationContent = styled.div`
 
 
 const MainDiv = styled.div`
-background-color: #FAC0D5;
+  background-color: #FAC0D5;
   width: 100%;
   height: 178vh;
   margin: 0;
