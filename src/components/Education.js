@@ -116,7 +116,7 @@ const SocialIconLink = styled.a`
   transition: 0.5s;
 
   &:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px);;
   }
 `;
 
