@@ -161,7 +161,7 @@ const PageWrapper = styled.div`
 
   max-width: 1100px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   font-size: 20px;
    /* Add this to enable vertical scrolling */
@@ -224,7 +224,7 @@ const EducationContent = styled.div`
 const MainDiv = styled.div`
   background-color: #FAC0D5;
   width: 100%;
-  height: 178vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
