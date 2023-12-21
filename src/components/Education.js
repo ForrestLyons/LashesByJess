@@ -178,6 +178,13 @@ const Logo = styled.img`
 
 
 `;
+const Icon = styled.img`
+  height: 25px;
+
+
+
+
+`;
 
 
 
@@ -255,12 +262,12 @@ const EducationPage = () => {
           <SocialIcons>
           <SocialIconItem>
             <SocialIconLink href="">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <Icon src="/facebook.png"></Icon>
             </SocialIconLink>
           </SocialIconItem>
           <SocialIconItem>
             <SocialIconLink href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <Icon src="/instagram.png"></Icon>
             </SocialIconLink>
           </SocialIconItem>
           <SocialIconItem>
