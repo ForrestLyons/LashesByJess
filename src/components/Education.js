@@ -1,9 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import {  Link } from 'react-router-dom';
 
-import HomePage from './HomePage';
-import ContactPage from './Contact';
-import ServicesPage from './Services';
 
 
 
@@ -133,7 +131,7 @@ const MenuItem = styled.li`
   list-style: none;
 `;
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   font-size: 1.2rem;
   color: #fff;
   margin: 0 10px;
@@ -289,10 +287,10 @@ const EducationPage = () => {
         </Waves>
 
         <Menu>
-          <MenuItem><MenuLink href={HomePage}>Home</MenuLink></MenuItem>
-          <MenuItem><MenuLink href={EducationPage}>Education</MenuLink></MenuItem>
-          <MenuItem><MenuLink href={ContactPage}>Contact</MenuLink></MenuItem>
-          <MenuItem><MenuLink href={ServicesPage}>Services</MenuLink></MenuItem>
+          <MenuItem><MenuLink to="/">Home</MenuLink></MenuItem>
+          <MenuItem><MenuLink to="/education">Education</MenuLink></MenuItem>
+          <MenuItem><MenuLink to="/contact">Contact</MenuLink></MenuItem>
+          <MenuItem><MenuLink to="/services">Services</MenuLink></MenuItem>
           {/* <MenuItem><MenuLink href={}>Contact</MenuLink></MenuItem> */}
         </Menu>
         <Copyright>&copy;2021 Nadine Coelho | All Rights Reserved</Copyright>
