@@ -174,7 +174,7 @@ const LogoContainer = styled.div`
 
 const Logo = styled.img`
   height: 150px;
-  margin-bottom: -25px;
+  margin-bottom: -25px;;
 
 
 
