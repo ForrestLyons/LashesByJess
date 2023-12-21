@@ -27,7 +27,6 @@ const animate = keyframes`
 `;
 
 const Footer = styled.footer`
-
   max-width: 1075px;
   background: #FAC0D5;
   min-height: 100px;
@@ -96,6 +95,7 @@ const Wave4 = styled(Wave)`
 `;
 
 const SocialIcons = styled.ul`
+  color:black;
   position: relative;
   display: flex;
   justify-content: center;
@@ -106,6 +106,7 @@ const SocialIcons = styled.ul`
 
 const SocialIconItem = styled.li`
   list-style: none;
+
 `;
 
 const SocialIconLink = styled.a`
@@ -116,7 +117,7 @@ const SocialIconLink = styled.a`
   transition: 0.5s;
 
   &:hover {
-    transform: translateY(-10px);;
+    transform: translateY(-10px);
   }
 `;
 
@@ -173,7 +174,6 @@ const LogoContainer = styled.div`
 
 const Logo = styled.img`
   height: 150px;
-  margin-bottom: -25px;
 
 
 
@@ -234,6 +234,10 @@ const Paragraph = styled.p`
 font-weight: 600;
 
 `
+const Icon = styled.img`
+height: 50px;
+
+`
 
 const EducationPage = () => {
   return (
@@ -260,24 +264,15 @@ const EducationPage = () => {
           <SocialIcons>
           <SocialIconItem>
             <SocialIconLink href="">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <Icon src="/facebook.png"></Icon>
             </SocialIconLink>
           </SocialIconItem>
           <SocialIconItem>
             <SocialIconLink href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <Icon src="/instagram.png"></Icon>
             </SocialIconLink>
           </SocialIconItem>
-          <SocialIconItem>
-            <SocialIconLink href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </SocialIconLink>
-          </SocialIconItem>
-          <SocialIconItem>
-            <SocialIconLink href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </SocialIconLink>
-          </SocialIconItem>
+
         </SocialIcons>
         <Waves>
           <Wave1 />
