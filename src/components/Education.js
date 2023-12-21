@@ -173,7 +173,6 @@ const LogoContainer = styled.div`
 
 const Logo = styled.img`
   height: 150px;
-  margin-bottom: -18px;
 
 
 
@@ -191,7 +190,6 @@ const Heading2 = styled.h2`
 
 `;
 const Heading3 = styled.h3`
-
   font-weight: 400;
   font-size: 80px;
   text-align: center;
@@ -201,6 +199,7 @@ const Heading3 = styled.h3`
 const ParallaxWrapper = styled.div`
   height: 400px;
   border-radius: 10px;
+
   background: url('/learning.jpg') center/cover no-repeat;
   background-attachment: fixed;
   &::before {
@@ -217,13 +216,14 @@ const ParallaxWrapper = styled.div`
 const EducationContent = styled.div`
   /* Add styling for the content after the ParallaxWrapper */
   font-size: 30px;
+
 `;
 
 
 const MainDiv = styled.div`
 background-color: #FAC0D5;
   width: 100%;
-  height: 100%vh;
+  height: 178vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
