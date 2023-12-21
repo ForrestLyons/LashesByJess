@@ -174,7 +174,7 @@ const LogoContainer = styled.div`
 
 const Logo = styled.img`
   height: 150px;
-
+  margin-bottom: -25px;
 
 
 
@@ -191,7 +191,6 @@ const Heading2 = styled.h2`
 
 `;
 const Heading3 = styled.h3`
-
   font-weight: 400;
   font-size: 80px;
   text-align: center;
@@ -201,6 +200,7 @@ const Heading3 = styled.h3`
 const ParallaxWrapper = styled.div`
   height: 400px;
   border-radius: 10px;
+
   background: url('/learning.jpg') center/cover no-repeat;
   background-attachment: fixed;
   &::before {
@@ -217,6 +217,7 @@ const ParallaxWrapper = styled.div`
 const EducationContent = styled.div`
   /* Add styling for the content after the ParallaxWrapper */
   font-size: 30px;
+
 `;
 
 
