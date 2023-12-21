@@ -27,6 +27,7 @@ const animate = keyframes`
 `;
 
 const Footer = styled.footer`
+
   max-width: 1075px;
   background: #FAC0D5;
   min-height: 100px;
@@ -95,7 +96,6 @@ const Wave4 = styled(Wave)`
 `;
 
 const SocialIcons = styled.ul`
-  color:black;
   position: relative;
   display: flex;
   justify-content: center;
@@ -106,7 +106,6 @@ const SocialIcons = styled.ul`
 
 const SocialIconItem = styled.li`
   list-style: none;
-
 `;
 
 const SocialIconLink = styled.a`
@@ -117,7 +116,7 @@ const SocialIconLink = styled.a`
   transition: 0.5s;
 
   &:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px);;
   }
 `;
 
@@ -161,7 +160,7 @@ const PageWrapper = styled.div`
 
   max-width: 1100px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   font-size: 20px;
    /* Add this to enable vertical scrolling */
@@ -174,6 +173,7 @@ const LogoContainer = styled.div`
 
 const Logo = styled.img`
   height: 150px;
+  margin-bottom: -18px;
 
 
 
@@ -221,9 +221,9 @@ const EducationContent = styled.div`
 
 
 const MainDiv = styled.div`
-  background-color: #FAC0D5;
+background-color: #FAC0D5;
   width: 100%;
-  height: 178vh;
+  height: 100%vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -234,20 +234,11 @@ const Paragraph = styled.p`
 font-weight: 600;
 
 `
-const Icon = styled.img`
-height: 50px;
-
-`
 
 const EducationPage = () => {
   return (
 
     <MainDiv id="education">
-
-
-
-
-
       <PageWrapper>
         <LogoContainer>
           <Logo src="/eyelash.png" alt="eyelash" />
@@ -264,15 +255,24 @@ const EducationPage = () => {
           <SocialIcons>
           <SocialIconItem>
             <SocialIconLink href="">
-            <Icon src="/facebook.png"></Icon>
+              <ion-icon name="logo-facebook"></ion-icon>
             </SocialIconLink>
           </SocialIconItem>
           <SocialIconItem>
             <SocialIconLink href="#">
-              <Icon src="/instagram.png"></Icon>
+              <ion-icon name="logo-twitter"></ion-icon>
             </SocialIconLink>
           </SocialIconItem>
-
+          <SocialIconItem>
+            <SocialIconLink href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </SocialIconLink>
+          </SocialIconItem>
+          <SocialIconItem>
+            <SocialIconLink href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </SocialIconLink>
+          </SocialIconItem>
         </SocialIcons>
         <Waves>
           <Wave1 />
