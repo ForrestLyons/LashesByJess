@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './global-styles.css';
 
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';  // Moved HomePage here
 import Navigation from './components/Navigation';
@@ -19,7 +20,7 @@ const App = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/education" element={<EducationPage />} />
       <Route path="/services" element={<ServicesPage />} />
-      <Route path="/ContactPage" element={<ContactPage />} />
+      <Route path="/Contact" element={<ContactPage />} />
       {/* Add more routes for other pages */}
     </Routes>
   </Router>
