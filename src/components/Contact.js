@@ -12,10 +12,11 @@ const ContactFormWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust the height as needed */
+  height: 130vh; /* Adjust the height as needed */
 `;
 const MainDiv = styled.div`
 background-color: #fbc3d3;
+
 `;
 
 
