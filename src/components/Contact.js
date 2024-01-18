@@ -1,13 +1,10 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-// import { faPaperPlane, faGithub, faCodepen, faTwitter, faInstagram } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import Footer from './Footer';
 
 // Styled Components
 const ContactFormWrapper = styled.div`
-  background-color: #fbc3d3;
-  max-width: 600px;
+  max-width: 1075px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -15,8 +12,8 @@ const ContactFormWrapper = styled.div`
   height: 130vh; /* Adjust the height as needed */
 `;
 const MainDiv = styled.div`
-background-color: #fbc3d3;
-
+background-color: #FAC0D5;
+width: 100%;
 `;
 
 
@@ -165,7 +162,7 @@ const ContactPage = () => {
         <SubmitButton type="submit">Submit</SubmitButton>
       </Form>
     </ContactFormWrapper>
-
+    <Footer />
     </MainDiv>
   );
 };
