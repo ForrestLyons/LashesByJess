@@ -162,18 +162,13 @@ const Footer = () => {
 
           <SocialIcons>
           <SocialIconItem>
-            <SocialIconLink href="">
+            <SocialIconLink href="https://www.facebook.com/yourprofile">
               <Icon src="/facebook.png"></Icon>
             </SocialIconLink>
           </SocialIconItem>
           <SocialIconItem>
-            <SocialIconLink href="#">
+            <SocialIconLink href="https://www.instagram.com/yourprofile">
               <Icon src="/instagram.png"></Icon>
-            </SocialIconLink>
-          </SocialIconItem>
-          <SocialIconItem>
-            <SocialIconLink href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
             </SocialIconLink>
           </SocialIconItem>
           <SocialIconItem>

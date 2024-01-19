@@ -9,6 +9,7 @@ import Navigation from './components/Navigation';
 import ServicesPage from './components/Services';
 import EducationPage from './components/Education';
 import ContactPage from './components/Contact';
+import BookNow from './components/BookNow';
 // import Footer from './components/Footer';
 
 
@@ -21,6 +22,7 @@ const App = () => {
       <Route path="/education" element={<EducationPage />} />
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/Contact" element={<ContactPage />} />
+      <Route path="/booknow" element={<BookNow />} />
       {/* Add more routes for other pages */}
     </Routes>
   </Router>

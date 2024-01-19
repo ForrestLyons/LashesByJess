@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 
 const HomePageContainer = styled.div`
   background-image: url('/woman.jpg');
@@ -74,25 +76,29 @@ const ButtonsContainer = styled.div`
   margin-top: 30px;
 `;
 
-const BookNowButton = styled.button`
+const StyledLink = styled(Link)`
   margin: 0 10px;
   padding: 10px 20px;
   font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+`;
+
+const BookNowButton = styled(StyledLink)`
   background-color: #ffcc99;
   border: none;
   width: 150px;
 `;
 
-const LearnMoreButton = styled.button`
-  margin: 0 10px;
-  padding: 10px 20px;
-  font-size: 14px;
+const LearnMoreButton = styled(StyledLink)`
   color: white;
   background-color: black;
   border: 2px solid white;
   width: 150px;
   opacity: 0.8;
 `;
+
 
 
 
@@ -108,8 +114,8 @@ const HomePage = () => {
           Our professional techniques will change the way you feel about yourself
         </Paragraph>
         <ButtonsContainer>
-          <BookNowButton>Book Now</BookNowButton>
-          <LearnMoreButton>Learn More</LearnMoreButton>
+        <BookNowButton to="/bookNow">Book Now</BookNowButton>
+            <LearnMoreButton to="/education">Learn More</LearnMoreButton>
         </ButtonsContainer>
       </AttentionDiv>
     </HomePageContainer>

@@ -104,9 +104,9 @@ const EducationPage = () => {
           <Paragraph>Hi! My name is Jess Valdez. I am a licensed Esthetician, and I am located in Pagosa Springs, Colorado. I started my own business in June of 2023 and I offer waxing, eyelash extensions, lamination and tinting. I would love to help accentuate your beauty, boost your self-confidence and give you the self-care you deserve! I believe that everybody deserves to feel great about the way they look, and our variety of services is suitable for every need. I offer affordable, safe and painless treatments for people of all ages. I only use industry-approved, state-of-the-art technologies. It will be my pleasure to meet – get in touch today!</Paragraph>
           <Heading3>My client's well being is first and foremost!</Heading3>
         </EducationContent>
-        <Footer />
-      </PageWrapper>
 
+      </PageWrapper>
+<Footer />
     </MainDiv>
   );
 };

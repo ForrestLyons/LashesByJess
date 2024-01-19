@@ -10,7 +10,7 @@ const ServicesContainer = styled.div`
   align-items: center;
   padding: 150px;
   max-width: 900px;
-  height: 1000px;
+  height: 1100px;
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
@@ -26,6 +26,9 @@ const Img = styled.div`
 `;
 
 const Description = styled.div`
+display: flex;
+  flex-direction: column; // Stack elements vertically
+  align-items: flex-start; // Align items to the start of the flex container
   width: 400px;
   padding: 15px;
 
@@ -66,7 +69,6 @@ const Service = styled.div`
 const BookNowButton = styled(Link)`
   display: inline-block;
   padding: 8px 15px;
-  margin-left: 20px; // Space from the price
   background-color: #e590ae; // Adjust the color as needed
   color: white;
   border-radius: 5px;
@@ -103,6 +105,7 @@ const ServicesPage = () => {
             <ServiceTitle>Lift and Tint</ServiceTitle>
             <p>Say goodbye to your eyelash curler! Lash Lift is a semi-permanent treatment to create a longlasting curl to naturally straight lashes. (Approx. 60 min)</p>
             <Price>Full Set: 80$ | Lift Only: $50</Price>
+            <BookNowButton to="/bookNow">Book Now</BookNowButton>
 
           </Description>
         </Service>
@@ -111,6 +114,9 @@ const ServicesPage = () => {
           <Description>
             <ServiceTitle>Waxing</ServiceTitle>
             <p>starts with a thin layer of warm wax applied to the hairs you wish to remove. A paper strip is placed over the top, the wax solidifies, and gentle pressure is applied to trap the individual hairs. Then, the strip is swiftly pulled away, pulling the hairs out directly from the root. (Approx. 60 min)</p>
+            <Price>Full Set: 80$ | Lift Only: $50</Price>
+            <BookNowButton to="/bookNow">Book Now</BookNowButton>
+
           </Description>
         </Service>
         <Service>
@@ -118,6 +124,8 @@ const ServicesPage = () => {
           <Description>
             <ServiceTitle>Eyebrow Lamination and Tint</ServiceTitle>
             <p>Is essentially a perm for your hairs, which can create a fuller more defined style. (Approx. 60 min)</p>
+            <Price>Full Set: 80$ | Lift Only: $50</Price>
+            <BookNowButton to="/bookNow">Book Now</BookNowButton>
           </Description>
         </Service>
       </ServicesContainer>
