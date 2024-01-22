@@ -16,6 +16,9 @@ const NavBar = styled.nav`
   z-index: 2; /* Set a higher z-index to ensure it's on top of the content */
   top: 0;
   left: 0;
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+  }
 
 `;
 
@@ -23,6 +26,9 @@ const Paragraph = styled.p`
   height: 30px;
   color: white;
   font-size: 35px;
+  @media (max-width: 790px) {
+    font-size: 14px;
+  }
 `;
 
 const NavLinkContainer = styled.div`
@@ -58,9 +64,13 @@ const NavLink = styled(Link)`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const Navigation = () => {
+
   return (
 
       <NavBar>

@@ -162,12 +162,12 @@ const Footer = () => {
 
           <SocialIcons>
           <SocialIconItem>
-            <SocialIconLink href="https://www.facebook.com/yourprofile">
+            <SocialIconLink href="https://www.facebook.com/jessica.carpenter.37">
               <Icon src="/facebook.png"></Icon>
             </SocialIconLink>
           </SocialIconItem>
           <SocialIconItem>
-            <SocialIconLink href="https://www.instagram.com/yourprofile">
+            <SocialIconLink href="https://www.instagram.com/jess.does.aesthetics/">
               <Icon src="/instagram.png"></Icon>
             </SocialIconLink>
           </SocialIconItem>
