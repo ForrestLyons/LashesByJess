@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom';
 const HomePageContainer = styled.div`
   background-image: url('/girl1.jpg');
   height:800px;
+
   background-size: cover;
   background-position: left center;
   opacity: 0.8;
 
-  width: 1300px;/* Set a minimum height to cover the viewport */
+  /* Set a minimum height to cover the viewport */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,7 +112,7 @@ const LearnMoreButton = styled(StyledLink)`
 `;
 const MainDiv = styled.div `
   background-color : #E9DCD4;
-  width: 1400px;
+  width: 100%;
   height: 1000px
   overflow: hidden; // Prevent scrolling on the main div
   // ... other styles ...

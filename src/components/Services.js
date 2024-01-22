@@ -9,7 +9,7 @@ const ServicesContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 150px;
-  max-width: 900px;
+  width: 100%;
   height: 1100px;
   &:nth-child(even) {
     flex-direction: row-reverse;
@@ -80,7 +80,7 @@ const BookNowButton = styled(Link)`
 const MainDiv = styled.div`
   background-color: #FAC0D5;
   height: 100%;
-  width: 1400px
+  width: 100%;
 `;
 const Price = styled.p`
   margin-top: 10px; // Add some space above the price
@@ -89,11 +89,14 @@ const Price = styled.p`
 const StyledLink = styled.a`
 margin-top: 10px; // Add some space above the price
 color: #000; // Set the text color
-text-decoration: none; // Remove underline from link
+text-decoration: underline;
+  text-decoration-color: black; // Specify the color of the underline
+  text-decoration-thickness: 2px;
 display: block; // Make it a block element
 text-align: center; // Center align the text
 padding: 10px 0; // Add some padding
-border-bottom: 5px solid black;`;
+
+`;
 const ServicesPage = () => {
   return (
     <MainDiv>
