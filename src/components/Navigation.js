@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 const NavBar = styled.nav`
-  height: 60px;
+  height: 40px;
   background-color: black; /* Set the background color to transparent */
   padding: 35px 20px;
   display: flex;

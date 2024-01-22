@@ -32,7 +32,7 @@ const BookNow = () => {
     <MainDiv>
       <Title>Schedule Your Appointment Now!</Title>
       <CalendarContainer>
-        <InlineWidget url="https://calendly.com/forrestjlyons" />
+        <InlineWidget url="https://calendly.com/jlcaty3" />
       </CalendarContainer>
       <Footer/>
     </MainDiv>

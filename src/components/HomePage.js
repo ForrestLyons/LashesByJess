@@ -4,29 +4,34 @@ import { Link } from 'react-router-dom';
 
 
 const HomePageContainer = styled.div`
-  background-image: url('/woman.jpg');
+  background-image: url('/girl1.jpg');
+  height:800px;
   background-size: cover;
-  background-position: center;
+  background-position: left center;
   opacity: 0.8;
-  min-height: 75vh; /* Set a minimum height to cover the viewport */
+
+  width: 1300px;/* Set a minimum height to cover the viewport */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   text-align: center;
   padding-top: 300px;
+  overflow: hidden; // Prevent scrolling on the main div
+  // ... other styles ...
   /* Hide the overflow to prevent scrolling */
 `;
 
 const AttentionDiv = styled.div`
   width: 700px;
   text-align: center;
-  margin-top: -400px;
+  margin-top: -700px;
+  margin-left: -40px;
 `;
 
 const Heading5 = styled.h5`
   font-weight: 200;
-  color: #f2f2f2;
+  color: #black;
   font-size: 20px;
   display: inline-block;
   position: relative;
@@ -56,24 +61,26 @@ const Heading5 = styled.h5`
 const Heading1 = styled.h1`
   font-weight: 200;
   opacity: 0.7;
-  color: #f2f2f2;
-  font-size: 30px;
+  color: #black;
+  font-size: 28px;
   margin-top: 20px;
 `;
 
 const Paragraph = styled.p`
   opacity: 0.9;
-  color: #f2f2f2;
-  font-size: 16px;
+  color: #black;
+  font-size: 20px;
   text-align: center;
   margin: 0 auto;
   width: 300px;
+
 `;
 
 const ButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 60px;
+
 `;
 
 const StyledLink = styled(Link)`
@@ -89,6 +96,9 @@ const BookNowButton = styled(StyledLink)`
   background-color: #ffcc99;
   border: none;
   width: 150px;
+  color:black;
+  font-size: 20px;
+  opacity: .8;
 `;
 
 const LearnMoreButton = styled(StyledLink)`
@@ -97,21 +107,28 @@ const LearnMoreButton = styled(StyledLink)`
   border: 2px solid white;
   width: 150px;
   opacity: 0.8;
+  font-size: 20px;
 `;
-
+const MainDiv = styled.div `
+  background-color : #E9DCD4;
+  width: 1400px;
+  height: 1000px
+  overflow: hidden; // Prevent scrolling on the main div
+  // ... other styles ...
+`
 
 
 
 const HomePage = () => {
   return (
     <div id = "home">
-
+      <MainDiv>
       <HomePageContainer>
       <AttentionDiv>
-        <Heading5>Attention-Grabbing Heading</Heading5>
+        <Heading5>LASHES BY JESS </Heading5>
         <Heading1>Enhance your look with our stunning lash extensions</Heading1>
         <Paragraph>
-          Our professional techniques will change the way you feel about yourself
+          My professional techniques will change the way you feel about yourself!
         </Paragraph>
         <ButtonsContainer>
         <BookNowButton to="/bookNow">Book Now</BookNowButton>
@@ -119,6 +136,7 @@ const HomePage = () => {
         </ButtonsContainer>
       </AttentionDiv>
     </HomePageContainer>
+    </MainDiv>
     </div>
   );
 }

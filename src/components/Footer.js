@@ -11,7 +11,7 @@ const Icon = styled.img`
 const Copyright = styled.p`
   color: #fff;
   margin: 15px 0 10px 0;
-  font-size: 1rem;
+  font-size: .6rem;
   font-weight: 300;
 `;
 
@@ -191,7 +191,7 @@ const Footer = () => {
           <MenuItem><MenuLink to="/services">Services</MenuLink></MenuItem>
           {/* <MenuItem><MenuLink href={}>Contact</MenuLink></MenuItem> */}
         </Menu>
-        <Copyright>&copy;2021 Nadine Coelho | All Rights Reserved</Copyright>
+        <Copyright>&copy;2024 LyonsDev | All Rights Reserved</Copyright>
       </FooterContainer>
   );
 }

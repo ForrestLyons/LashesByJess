@@ -5,15 +5,15 @@ const sendEmail = async (formData) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'forrestjlyons@gmail.com',
-      pass: 'grvn aokd liiv lyum',
+      user: 'jlcaty3@gmail.com',
+      pass: 'aguo teth uvbu gauj',
     },
   });
 
   // Setup email data
   const mailOptions = {
     from: 'your-email@gmail.com',
-    to: 'forrestjlyons@gmail.com', // Replace with the actual recipient email address
+    to: 'jlcaty3@gmail.com', // Replace with the actual recipient email address
     subject: formData.subject,
     text: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
   };

@@ -86,6 +86,14 @@ const Price = styled.p`
   margin-top: 10px; // Add some space above the price
    // Optional: to highlight the price
 `;
+const StyledLink = styled.a`
+margin-top: 10px; // Add some space above the price
+color: #000; // Set the text color
+text-decoration: none; // Remove underline from link
+display: block; // Make it a block element
+text-align: center; // Center align the text
+padding: 10px 0; // Add some padding
+border-bottom: 5px solid black;`;
 const ServicesPage = () => {
   return (
     <MainDiv>
@@ -129,6 +137,7 @@ const ServicesPage = () => {
           </Description>
         </Service>
       </ServicesContainer>
+      <StyledLink href="/extension prep.docx" target="_blank">Please review pre-appt check list.</StyledLink>
       <Footer />
     </MainDiv>
   );
