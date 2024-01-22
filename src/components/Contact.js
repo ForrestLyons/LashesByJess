@@ -4,12 +4,13 @@ import Footer from './Footer';
 
 // Styled Components
 const ContactFormWrapper = styled.div`
+
   max-width: 1075px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 130vh; /* Adjust the height as needed */
+  height: 100vh; /* Adjust the height as needed */
 `;
 const MainDiv = styled.div`
 background-color: #FAC0D5;

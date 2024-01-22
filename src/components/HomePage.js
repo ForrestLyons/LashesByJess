@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const HomePageContainer = styled.div`
-  background-image: url('/girl1.jpg');
+  background-image: url('/homepagefix.jpg');
   height:800px;
 
   background-size: cover;
