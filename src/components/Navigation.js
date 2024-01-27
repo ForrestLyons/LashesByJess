@@ -41,37 +41,57 @@ const NavLinkContainer = styled.div`
   }
 `;
 const MobileNavMenu = styled.div`
-  display: none;
+display: none;
 
-  @media (max-width: 768px) {
-
-    display: flex;
-    flex-direction: column;
-    position: fixed; // Use fixed instead of absolute
-    top: 60px; // Adjust based on your navbar height
-    left: 0;
-    background-color: #000;
-    width: 100%;
-    z-index: 999; // Ensure this is below Na
-
-  }
+@media (max-width: 768px) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: ${props => props.isOpen ? 'flex' : 'none'};
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #000;
+  width: 130px;
+  z-index: 10;
+}
 `;
-const Hamburger = styled.div`
-  display: none;
+const HamburgerIcon = styled.div`
 
 
   @media (max-width: 768px) {
-    font-size: 24px;
-    display: block;
-    cursor: pointer;
-    color: white;
-    height: 100px;
-    z-index: 9;
+    z-index: 998;
+    margin-right: 40px;
+    width: 30px;
+    height: 3px;
+    background-color: white;
     position: relative;
+    transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+    transition: transform 0.3s;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      transition: transform 0.3s, top 0.3s, opacity 0.3s;
+    }
+
+    &::before {
+      top: ${({ open }) => open ? '0' : '-10px'};
+      transform: ${({ open }) => open ? 'rotate(90deg)' : 'rotate(0)'};
+    }
+
+    &::after {
+      top: ${({ open }) => open ? '0' : '10px'};
+      opacity: ${({ open }) => open ? '0' : '1'};
+    }
+  `;
 
 
-  }
-`;
 
 const NavLink = styled(Link)`
   position: relative;
@@ -88,7 +108,7 @@ const NavLink = styled(Link)`
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 2px;
     background-color: #B76E79; /* Rose gold color */
     transform: scaleX(0);
@@ -102,6 +122,23 @@ const NavLink = styled(Link)`
   }
   @media (max-width: 768px) {
     font-size: 14px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 65%;
+      height: 2px;
+      background-color: #B76E79; /* Rose gold color */
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 1s ease; /* Slower transition */
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
 `;
 
@@ -109,18 +146,17 @@ const Navigation = () => {
   const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
 
   const toggleMobileNav = () => {
-    console.log("Toggling Mobile Nav");
+    console.log("Toggling Mobile Nav:", !isMobileNavVisible); // Debugging
     setIsMobileNavVisible(!isMobileNavVisible);
   };
+
 
   return (
 
       <NavBar>
         <Paragraph>LASHES BY JESS</Paragraph>
 
-        <Hamburger onClick={toggleMobileNav} >
-        ☰
-      </Hamburger>
+        <HamburgerIcon onClick={toggleMobileNav} open={isMobileNavVisible} />
         <NavLinkContainer>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/education">Education</NavLink>
@@ -130,11 +166,14 @@ const Navigation = () => {
           {/* Add more NavLink components for other pages */}
         </NavLinkContainer>
         {isMobileNavVisible && (
-        <MobileNavMenu >
-        <NavLink to="/" onClick={toggleMobileNav}>Home</NavLink>
-        <NavLink to="/education" onClick={toggleMobileNav}>Education</NavLink>
-        {/* More links */}
-      </MobileNavMenu>
+  <MobileNavMenu isOpen={isMobileNavVisible}>
+    <NavLink to="/" onClick={toggleMobileNav}>Home</NavLink>
+    <NavLink to="/education" onClick={toggleMobileNav}>Education</NavLink>
+    <NavLink to="/contact" onClick={toggleMobileNav}>Contact</NavLink>
+    <NavLink to="/services" onClick={toggleMobileNav}>Services</NavLink>
+    <NavLink to="/booknow" onClick={toggleMobileNav}>BOOK NOW</NavLink>
+    {/* More links */}
+  </MobileNavMenu>
       )}
       </NavBar>
 

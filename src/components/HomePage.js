@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const HomePageContainer = styled.div`
   background-image: url('/homepagefix.jpg');
-  height:800px;
+  height:850px;
 
   background-size: cover;
   background-position: left center;
@@ -14,13 +14,16 @@ const HomePageContainer = styled.div`
   /* Set a minimum height to cover the viewport */
   display: flex;
   flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: left;
   text-align: center;
   padding-top: 300px;
-  overflow: hidden; // Prevent scrolling on the main div
-  // ... other styles ...
-  /* Hide the overflow to prevent scrolling */
+  overflow: hidden;
+  @media (max-width: 768px) {
+    padding-top: 150px;
+    height: 1000px;
+  }
 `;
 
 const AttentionDiv = styled.div`
@@ -28,6 +31,11 @@ const AttentionDiv = styled.div`
   text-align: center;
   margin-top: -700px;
   margin-left: -40px;
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-top: -50px;
+    margin-left: 5%;
+  }
 `;
 
 const Heading5 = styled.h5`
@@ -113,7 +121,7 @@ const LearnMoreButton = styled(StyledLink)`
 const MainDiv = styled.div `
   background-color : #E9DCD4;
   width: 100%;
-  height: 1000px
+  height: 100%;
   overflow: hidden; // Prevent scrolling on the main div
   // ... other styles ...
 `
