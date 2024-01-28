@@ -44,14 +44,12 @@ const MobileNavMenu = styled.div`
 display: none;
 
 @media (max-width: 768px) {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   display: ${props => props.isOpen ? 'flex' : 'none'};
   flex-direction: column;
   position: absolute;
-  top: 60px;
+  top: 40px;
   right: 0;
   background-color: #000;
   width: 130px;
@@ -59,36 +57,38 @@ display: none;
 }
 `;
 const HamburgerIcon = styled.div`
+@media (max-width: 750px) {
+cursor: pointer;
+display: block;
+z-index: 998;
+width: 30px; // Width of the hamburger lines
+height: 3px; // Height of the hamburger lines
+background-color: white;
+position: relative;
+transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+transition: transform 0.3s;
+
+&::before, &::after {
+  content: '';
+  position: absolute;
+  width: 30px; // Match the width of the hamburger lines
+  height: 3px; // Match the height of the hamburger lines
+  background-color: white;
+  transition: transform 0.3s, top 0.3s, opacity 0.3s;
+}
+
+&::before {
+  top: ${({ open }) => open ? '0' : '-10px'};
+  transform: ${({ open }) => open ? 'rotate(90deg)' : 'rotate(0)'};
+}
+
+&::after {
+  top: ${({ open }) => open ? '0' : '10px'};
+  opacity: ${({ open }) => open ? '0' : '1'};
+}
+}
 
 
-  @media (max-width: 768px) {
-    z-index: 998;
-    margin-right: 40px;
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    position: relative;
-    transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
-    transition: transform 0.3s;
-
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      background-color: white;
-      transition: transform 0.3s, top 0.3s, opacity 0.3s;
-    }
-
-    &::before {
-      top: ${({ open }) => open ? '0' : '-10px'};
-      transform: ${({ open }) => open ? 'rotate(90deg)' : 'rotate(0)'};
-    }
-
-    &::after {
-      top: ${({ open }) => open ? '0' : '10px'};
-      opacity: ${({ open }) => open ? '0' : '1'};
-    }
   `;
 
 

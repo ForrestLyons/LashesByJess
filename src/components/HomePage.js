@@ -14,15 +14,14 @@ const HomePageContainer = styled.div`
   /* Set a minimum height to cover the viewport */
   display: flex;
   flex-direction: column;
-  width: 100%;
+
   justify-content: center;
   align-items: left;
   text-align: center;
   padding-top: 300px;
   overflow: hidden;
-  @media (max-width: 768px) {
-    padding-top: 150px;
-    height: 1000px;
+  @media (max-width: 375px) {
+    background-position: left center;
   }
 `;
 
@@ -31,10 +30,10 @@ const AttentionDiv = styled.div`
   text-align: center;
   margin-top: -700px;
   margin-left: -40px;
-  @media (max-width: 768px) {
-    width: 90%;
-    margin-top: -50px;
-    margin-left: 5%;
+  @media (max-width: 360px) {
+    width: 300px;
+    margin-left: 40px;
+
   }
 `;
 
@@ -65,6 +64,7 @@ const Heading5 = styled.h5`
   &::after {
     right: -30px;
   }
+
 }`;
 
 const Heading1 = styled.h1`
@@ -73,6 +73,10 @@ const Heading1 = styled.h1`
   color: #black;
   font-size: 28px;
   margin-top: 20px;
+  @media (max-width: 360px) {
+    font-size: 20px;
+
+  }
 `;
 
 const Paragraph = styled.p`
@@ -82,7 +86,9 @@ const Paragraph = styled.p`
   text-align: center;
   margin: 0 auto;
   width: 300px;
-
+  @media (max-width: 378px) {
+  font-size: 15px;
+  }
 `;
 
 const ButtonsContainer = styled.div`
@@ -106,8 +112,12 @@ const BookNowButton = styled(StyledLink)`
   border: none;
   width: 150px;
   color:black;
-  font-size: 20px;
+  font-size: 15px;
   opacity: .8;
+  @media (max-width: 378px) {
+    width: 100px;
+
+  }
 `;
 
 const LearnMoreButton = styled(StyledLink)`
@@ -117,13 +127,20 @@ const LearnMoreButton = styled(StyledLink)`
   width: 150px;
   opacity: 0.8;
   font-size: 20px;
+  @media (max-width: 378px) {
+    width: 100px;
+    font-size: 15px;
+    height: 60px;
+  }
 `;
 const MainDiv = styled.div `
   background-color : #E9DCD4;
-  width: 100%;
   height: 100%;
-  overflow: hidden; // Prevent scrolling on the main div
-  // ... other styles ...
+  width: 100%;
+  overflow: hidden;
+  @media (max-width: 378px) {
+    width:100%;
+  }
 `
 
 
