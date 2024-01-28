@@ -10,10 +10,11 @@ const ServicesContainer = styled.div`
   align-items: center;
   padding: 150px;
   width: 100%;
-  height: 1100px;
+  height: 100%;
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
+
 `;
 const Img = styled.div`
   width: 120px;
@@ -32,9 +33,7 @@ display: flex;
   width: 400px;
   padding: 15px;
 
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+
 `;
 
 const ServiceTitle = styled.h2`
@@ -62,7 +61,28 @@ const Service = styled.div`
       margin-left: 0;
       margin-right: 0;
     }
+    @media (max-width: 280px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      margin: 20px 0; // Adjust margin for more space
+      width: 250px;
+      display: flex;
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+
   }
+  @media (max-width: 375px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      margin: 20px 0; // Adjust margin for more space
+      display: flex;
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+    }
 `;
 
 // ServicesPage component remains the same
@@ -81,6 +101,10 @@ const MainDiv = styled.div`
   background-color: #FAC0D5;
   height: 100%;
   width: 100%;
+  @media (max-width: 375px) {
+    width: 100%;
+  }
+
 `;
 const Price = styled.p`
   margin-top: 10px; // Add some space above the price
@@ -121,7 +145,7 @@ const ServicesPage = () => {
           </Description>
         </Service>
         <Service>
-        <Img style={{ backgroundImage: `url("/girl2.jpg")` }} />
+        <Img style={{ backgroundImage: `url("/girl1.jpg")` }} />
           <Description>
             <ServiceTitle>Waxing</ServiceTitle>
             <p>starts with a thin layer of warm wax applied to the hairs you wish to remove. A paper strip is placed over the top, the wax solidifies, and gentle pressure is applied to trap the individual hairs. Then, the strip is swiftly pulled away, pulling the hairs out directly from the root. (Approx. 60 min)</p>
@@ -131,7 +155,7 @@ const ServicesPage = () => {
           </Description>
         </Service>
         <Service>
-        <Img style={{ backgroundImage: `url("/girl2.jpg")` }} />
+        <Img style={{ backgroundImage: `url("/girl5.jpg")` }} />
           <Description>
             <ServiceTitle>Eyebrow Lamination and Tint</ServiceTitle>
             <p>Is essentially a perm for your hairs, which can create a fuller more defined style. (Approx. 60 min)</p>

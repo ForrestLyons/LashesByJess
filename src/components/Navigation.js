@@ -57,7 +57,7 @@ display: none;
 }
 `;
 const HamburgerIcon = styled.div`
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 cursor: pointer;
 display: block;
 z-index: 998;

@@ -21,11 +21,21 @@ const CalendarContainer = styled.div`
   border-radius: 8px;
   opacity: .8;
   // Add more styling as needed
+  @media (max-width: 280px) {
+    width: 100%; // Use a percentage to make it responsive
+    max-width: 300px; // Set a max-width to prevent it from getting too wide on small screens
+    padding: 10px; // Adjust padding for smaller screens
+  }
 `;
  const MainDiv = styled.div`
  background-color: #FAC0D5;
  padding-top: 200px;
+
+
  `
+
+
+
 
 const BookNow = () => {
   return (

@@ -11,10 +11,12 @@ const ContactFormWrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh; /* Adjust the height as needed */
+
 `;
 const MainDiv = styled.div`
 background-color: #FAC0D5;
 width: 100%;
+
 `;
 
 
@@ -24,12 +26,14 @@ const Form = styled.form`
   flex-direction: column;
   max-width: 400px; /* Adjust the max-width as needed */
   width: 100%;
+
 `;
 
 const FormGroup = styled.div`
 margin-bottom: 20px;
 display: flex;
 flex-direction: column;
+
 `;
 
 const Label = styled.label`

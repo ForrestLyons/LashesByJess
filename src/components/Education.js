@@ -21,13 +21,30 @@ const PageWrapper = styled.div`
 
 const LogoContainer = styled.div`
   text-align: center;
+  @media (max-width: 280px) {
+    margin-top: -150px;
 
+  }
+  @media (max-width: 375px) {
+    margin-top: -150px;
+
+  }
+  @media (max-width: 430px) {
+    margin-top: -150px;
+
+  }
 `;
 
 const Logo = styled.img`
   height: 150px;
 
 
+  @media (max-width: 280px) {
+    width: 90px;
+    height:45px;
+
+
+  }
 
 
 `;
@@ -47,7 +64,18 @@ const Heading3 = styled.h3`
   font-weight: 400;
   font-size: 80px;
   text-align: center;
+  @media (max-width: 280px) {
+    font-size: 35px;
 
+  }
+  @media (max-width: 375px) {
+    font-size: 35px;
+
+  }
+  @media (max-width: 430px) {
+    font-size: 30px;
+
+  }
 `;
 
 const ParallaxWrapper = styled.div`
@@ -65,12 +93,39 @@ const ParallaxWrapper = styled.div`
     width: 100%;
     height: 100%;
   }
+  @media (max-width: 280px) {
+    height: 300px; // Reduced height for smaller screens
+    background-size: cotain; // Ensure the image covers the div
+    background-position: center;
+
+  }
+  @media (max-width: 375px) {
+    height: 300px; // Reduced height for smaller screens
+
+
+  }
+  @media (max-width: 430px) {
+    height: 400px; // Reduced height for smaller screens
+
+
+  }
 `;
 
 const EducationContent = styled.div`
   /* Add styling for the content after the ParallaxWrapper */
   font-size: 30px;
+  @media (max-width: 280px) {
+    font-size: 20px;
 
+  }
+  @media (max-width: 375px) {
+    font-size: 15px;
+
+  }
+  @media (max-width: 430px) {
+    font-size: 20px;
+
+  }
 `;
 
 

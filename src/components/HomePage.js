@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const HomePageContainer = styled.div`
   background-image: url('/homepagefix.jpg');
-  height:850px;
+  height:950px;
 
   background-size: cover;
   background-position: left center;
@@ -20,8 +20,26 @@ const HomePageContainer = styled.div`
   text-align: center;
   padding-top: 300px;
   overflow: hidden;
-  @media (max-width: 375px) {
-    background-position: left center;
+  @media (max-width: 390px) {
+    background-size: contain; // Zooms out the image to fit it completely within the container
+    background-position:  top center;
+    background-repeat: no-repeat;
+    height: auto;
+
+  }
+  @media (max-width: 430px) {
+    background-size: contain; // Zooms out the image to fit it completely within the container
+    background-position:  top center;
+    background-repeat: no-repeat;
+    height: auto;
+
+  }
+  @media (max-width: 280px) {
+    background-size: contain; // Zooms out the image to fit it completely within the container
+    background-position:  top center;
+    background-repeat: no-repeat;
+    height: auto;
+
   }
 `;
 
@@ -30,9 +48,19 @@ const AttentionDiv = styled.div`
   text-align: center;
   margin-top: -700px;
   margin-left: -40px;
-  @media (max-width: 360px) {
-    width: 300px;
-    margin-left: 40px;
+  @media (max-width: 390px) {
+    width: 250px; // Adjusted width for smaller screens
+    margin-top: -300px; // Adjusted margin-top for smaller screens
+    margin-left: 50px;
+
+
+  }
+
+  @media (max-width: 430px) {
+    width: 200px; // Adjusted width for smaller screens
+    margin-top: -300px; // Adjusted margin-top for smaller screens
+    margin-left: 90px;
+
 
   }
 `;
@@ -46,8 +74,18 @@ const Heading5 = styled.h5`
   padding: 0 30px;
   margin: 0 10px;
   overflow-wrap: break-word;
+  @media (max-width: 390px) {
+    font-size: 18px;
 
+
+  }
+  @media (max-width: 430px) {
+
+    font-size: 15px;
+
+  }
   &::before,
+
   &::after {
     content: "";
     position: absolute;
@@ -73,8 +111,12 @@ const Heading1 = styled.h1`
   color: #black;
   font-size: 28px;
   margin-top: 20px;
-  @media (max-width: 360px) {
-    font-size: 20px;
+  @media (max-width: 390px) {
+    font-size: 15px;
+
+  }
+  @media (max-width: 430px) {
+    font-size: 15px;
 
   }
 `;
@@ -86,8 +128,13 @@ const Paragraph = styled.p`
   text-align: center;
   margin: 0 auto;
   width: 300px;
-  @media (max-width: 378px) {
+  @media (max-width: 390px) {
   font-size: 15px;
+  width: 200px;
+  }
+  @media (max-width: 430px) {
+  font-size: 15px;
+  width: 200px;
   }
 `;
 
@@ -114,8 +161,16 @@ const BookNowButton = styled(StyledLink)`
   color:black;
   font-size: 15px;
   opacity: .8;
-  @media (max-width: 378px) {
-    width: 100px;
+  @media (max-width: 390px) {
+    width: 90px;
+    height:45px;
+    font-size: 13px;
+
+  }
+  @media (max-width: 430px) {
+    width: 130px;
+    height:50px;
+    font-size: 13px;
 
   }
 `;
@@ -127,20 +182,28 @@ const LearnMoreButton = styled(StyledLink)`
   width: 150px;
   opacity: 0.8;
   font-size: 20px;
-  @media (max-width: 378px) {
-    width: 100px;
-    font-size: 15px;
-    height: 60px;
-  }
+  @media (max-width: 390px) {
+
+      width: 95px;
+      height:45px;
+      font-size: 12px;
+
+    }
+  @media (max-width: 430px) {
+
+      width: 130px;
+      height:50px;
+      font-size: 12px;
+
+    }
+
 `;
 const MainDiv = styled.div `
   background-color : #E9DCD4;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  @media (max-width: 378px) {
-    width:100%;
-  }
+
 `
 
 
