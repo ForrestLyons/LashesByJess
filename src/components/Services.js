@@ -23,7 +23,14 @@ const Img = styled.div`
   background-image: url(${props => props.imageUrl});
   background-size: cover;
   background-position: center;
-  margin: 0 20px; // Consistent margin on both sides
+  margin: 0 20px;
+  @media (max-width: 430px) {
+
+    width: 70px;
+    height:70px;
+    font-size: 12px;
+
+  }// Consistent margin on both sides
 `;
 
 const Description = styled.div`
@@ -32,7 +39,26 @@ display: flex;
   align-items: flex-start; // Align items to the start of the flex container
   width: 400px;
   padding: 15px;
+  @media (max-width: 280px) {
+    width: 270px;
+    height:280px;
 
+
+  }
+  @media (max-width: 390px) {
+    width: 270px;
+    height:280px;
+    font-size: 15px;
+
+
+  }
+  @media (max-width: 430px) {
+    width: 270px;
+    height:350px;
+    font-size: 20px;
+
+
+  }
 
 `;
 
@@ -54,13 +80,16 @@ const Service = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+      align-items: center;
+      text-align: left;
+      margin: 20px 0; // Adjust margin for more space
+      width: 250px;
+      display: flex;
+      &:nth-child(even) {
+        flex-direction: column;
+      }
 
-    & > ${Img}, & > ${Description} {
-      margin-left: 0;
-      margin-right: 0;
-    }
+  }
     @media (max-width: 280px) {
       flex-direction: column;
       align-items: center;
@@ -73,7 +102,17 @@ const Service = styled.div`
       }
 
   }
-  @media (max-width: 375px) {
+  @media (max-width: 390px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      margin: 20px 0; // Adjust margin for more space
+      display: flex;
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+  @media (max-width: 430px) {
       flex-direction: column;
       align-items: center;
       text-align: left;

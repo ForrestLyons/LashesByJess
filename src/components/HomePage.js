@@ -36,9 +36,10 @@ const HomePageContainer = styled.div`
   }
   @media (max-width: 280px) {
     background-size: contain; // Zooms out the image to fit it completely within the container
-    background-position:  top center;
+    background-position:   center;
     background-repeat: no-repeat;
-    height: auto;
+    height: 300px;
+    margin-left: -50px;
 
   }
 `;
@@ -52,6 +53,10 @@ const AttentionDiv = styled.div`
     width: 250px; // Adjusted width for smaller screens
     margin-top: -300px; // Adjusted margin-top for smaller screens
     margin-left: 50px;
+
+
+  }
+  @media (max-width: 280px) {
 
 
   }
@@ -79,6 +84,13 @@ const Heading5 = styled.h5`
 
 
   }
+  @media (max-width: 280px) {
+    margin-top: 50px;
+
+
+
+  }
+
   @media (max-width: 430px) {
 
     font-size: 15px;
@@ -115,6 +127,7 @@ const Heading1 = styled.h1`
     font-size: 15px;
 
   }
+
   @media (max-width: 430px) {
     font-size: 15px;
 
@@ -136,12 +149,21 @@ const Paragraph = styled.p`
   font-size: 15px;
   width: 200px;
   }
+  @media (min-width: 280px) {
+  font-size: 15px;
+  width: 200px;
+  }
 `;
 
 const ButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  @media (max-width: 280px) {
+
+    padding-bottom: 20px;
+
+  }
 
 `;
 
@@ -173,6 +195,12 @@ const BookNowButton = styled(StyledLink)`
     font-size: 13px;
 
   }
+  @media (max-width: 280px) {
+    width: 130px;
+    height:40px;
+    font-size: 12px;
+
+  }
 `;
 
 const LearnMoreButton = styled(StyledLink)`
@@ -196,6 +224,13 @@ const LearnMoreButton = styled(StyledLink)`
       font-size: 12px;
 
     }
+  @media (max-width: 280px) {
+
+      width: 130px;
+      height:40px;
+      font-size: 12px;
+
+    }
 
 `;
 const MainDiv = styled.div `
@@ -203,6 +238,13 @@ const MainDiv = styled.div `
   height: 100%;
   width: 100%;
   overflow: hidden;
+
+@media (max-width: 280px) {
+
+      height: 300px;
+      font-size: 12px;
+
+    }
 
 `
 

@@ -4,45 +4,49 @@ import Footer from './Footer';
 import { InlineWidget } from "react-calendly";
 
 
-// Styled components
 const Title = styled.h1`
-margin-top: 100px;
+  margin-top: 100px;
   text-align: center;
   margin-top: 20px;
-  // Add more styling as needed
 `;
 
 const CalendarContainer = styled.div`
   margin: 40px auto;
-  width: 600px;
+  width: 500px;
   height: 100%;
   background-color: #FAC0D5;
   padding: 20px;
   border-radius: 8px;
   opacity: .8;
-  // Add more styling as needed
+
   @media (max-width: 280px) {
-    width: 100%; // Use a percentage to make it responsive
-    max-width: 300px; // Set a max-width to prevent it from getting too wide on small screens
-    padding: 10px; // Adjust padding for smaller screens
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  @media (max-width: 390px) {
+    max-width: 300px;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 430px) {
+    max-width: 300px;
+    padding: 10px;
   }
 `;
+
  const MainDiv = styled.div`
  background-color: #FAC0D5;
  padding-top: 200px;
-
-
  `
-
-
-
 
 const BookNow = () => {
   return (
     <MainDiv>
       <Title>Schedule Your Appointment Now!</Title>
       <CalendarContainer>
-        <InlineWidget url="https://calendly.com/jlcaty3" />
+        <InlineWidget url="https://calendly.com/jlcaty3" style={{ minWidth: '300px', height: '400px' }} />
       </CalendarContainer>
       <Footer/>
     </MainDiv>

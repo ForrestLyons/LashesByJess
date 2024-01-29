@@ -3,35 +3,25 @@ import styled from 'styled-components';
 import Footer from './Footer';
 
 
-
-
-
-
-
 const PageWrapper = styled.div`
   padding-top: 250px;
-
   max-width: 1100px;
   margin: 0 auto;
   height: 100%;
   text-align: center;
   font-size: 20px;
-   /* Add this to enable vertical scrolling */
 `;
 
 const LogoContainer = styled.div`
   text-align: center;
   @media (max-width: 280px) {
     margin-top: -150px;
-
   }
   @media (max-width: 375px) {
     margin-top: -150px;
-
   }
   @media (max-width: 430px) {
     margin-top: -150px;
-
   }
 `;
 

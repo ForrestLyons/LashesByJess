@@ -2,38 +2,33 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import Footer from './Footer';
 
-// Styled Components
-const ContactFormWrapper = styled.div`
 
+const ContactFormWrapper = styled.div`
   max-width: 1075px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust the height as needed */
+  height: 100vh;
 
 `;
 const MainDiv = styled.div`
 background-color: #FAC0D5;
 width: 100%;
-
 `;
-
 
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  max-width: 400px; /* Adjust the max-width as needed */
+  max-width: 400px;
   width: 100%;
-
 `;
 
 const FormGroup = styled.div`
 margin-bottom: 20px;
 display: flex;
 flex-direction: column;
-
 `;
 
 const Label = styled.label`
@@ -91,7 +86,7 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Make an HTTP POST request to the server-side endpoint
+
       const response = await fetch('http://localhost:3001/api/send-email', {
         method: 'POST',
         headers: {
