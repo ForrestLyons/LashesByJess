@@ -3,8 +3,21 @@ const sendEmail = require('./sendEmail');
 
 const app = express();
 const cors = require('cors');
-const port = 3001; // Choose a suitable port
-app.use(cors());
+const port = process.env.PORT || 3001;
+
+const allowedOrigins = ['https://lashesbyjess.net', 'http://localhost:3000'];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
+
+
 app.use(express.json());
 
 
@@ -13,7 +26,7 @@ app.post('/api/send-email', async (req, res) => {
   const formData = req.body;
 
   try {
-    // Call the function to send an email
+
     await sendEmail(formData);
     res.status(200).send('Email sent successfully');
   } catch (error) {

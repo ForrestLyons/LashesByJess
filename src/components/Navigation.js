@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 
 const NavBar = styled.nav`
   height: 40px;
-  background-color: black; /* Set the background color to transparent */
+  background-color: black;
   padding: 35px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative; /* Fixed position to keep the navbar at the top */
-  width: 100%; /* Make the navbar span the entire width */
-  z-index: 1000; /* Set a higher z-index to ensure it's on top of the content */
+  position: relative;
+  width: 100%;
+  z-index: 1000;
   top: 0;
   left: 0;
   @media (max-width: 768px) {
@@ -172,7 +172,6 @@ const Navigation = () => {
     <NavLink to="/contact" onClick={toggleMobileNav}>Contact</NavLink>
     <NavLink to="/services" onClick={toggleMobileNav}>Services</NavLink>
     <NavLink to="/booknow" onClick={toggleMobileNav}>BOOK NOW</NavLink>
-    {/* More links */}
   </MobileNavMenu>
       )}
       </NavBar>

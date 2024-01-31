@@ -189,7 +189,7 @@ const Footer = () => {
           <MenuItem><MenuLink to="/education">Education</MenuLink></MenuItem>
           <MenuItem><MenuLink to="/contact">Contact</MenuLink></MenuItem>
           <MenuItem><MenuLink to="/services">Services</MenuLink></MenuItem>
-          {/* <MenuItem><MenuLink href={}>Contact</MenuLink></MenuItem> */}
+          <MenuItem><MenuLink to="/booknow">Book Now</MenuLink></MenuItem>
         </Menu>
         <Copyright>&copy;2024 LyonsDev | All Rights Reserved</Copyright>
       </FooterContainer>

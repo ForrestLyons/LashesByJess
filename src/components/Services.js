@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
-// Styled components
+
 const ServicesContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,6 +14,7 @@ const ServicesContainer = styled.div`
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
+
 
 `;
 const Img = styled.div`
@@ -30,13 +31,13 @@ const Img = styled.div`
     height:70px;
     font-size: 12px;
 
-  }// Consistent margin on both sides
+  }
 `;
 
 const Description = styled.div`
 display: flex;
-  flex-direction: column; // Stack elements vertically
-  align-items: flex-start; // Align items to the start of the flex container
+  flex-direction: column;
+  align-items: flex-start;
   width: 400px;
   padding: 15px;
   @media (max-width: 280px) {
@@ -67,7 +68,6 @@ const ServiceTitle = styled.h2`
   font-size: 1.5rem;
 `;
 
-// Update the Service component
 const Service = styled.div`
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@ const Service = styled.div`
     flex-direction: column;
       align-items: center;
       text-align: left;
-      margin: 20px 0; // Adjust margin for more space
+      margin: 20px 0;
       width: 250px;
       display: flex;
       &:nth-child(even) {
@@ -94,7 +94,7 @@ const Service = styled.div`
       flex-direction: column;
       align-items: center;
       text-align: left;
-      margin: 20px 0; // Adjust margin for more space
+      margin: 20px 0;
       width: 250px;
       display: flex;
       &:nth-child(even) {
@@ -106,7 +106,7 @@ const Service = styled.div`
       flex-direction: column;
       align-items: center;
       text-align: left;
-      margin: 20px 0; // Adjust margin for more space
+      margin: 20px 0;
       display: flex;
       &:nth-child(even) {
         flex-direction: column;
@@ -116,7 +116,7 @@ const Service = styled.div`
       flex-direction: column;
       align-items: center;
       text-align: left;
-      margin: 20px 0; // Adjust margin for more space
+      margin: 20px 0;
       display: flex;
       &:nth-child(even) {
         flex-direction: column;
@@ -128,12 +128,12 @@ const Service = styled.div`
 const BookNowButton = styled(Link)`
   display: inline-block;
   padding: 8px 15px;
-  background-color: #e590ae; // Adjust the color as needed
+  background-color: #e590ae;
   color: white;
   border-radius: 5px;
-  text-decoration: none; // Remove underline from link
+  text-decoration: none;
   text-align: center;
-  // Add other styling as needed
+
 `;
 
 const MainDiv = styled.div`
@@ -146,18 +146,17 @@ const MainDiv = styled.div`
 
 `;
 const Price = styled.p`
-  margin-top: 10px; // Add some space above the price
-   // Optional: to highlight the price
+  margin-top: 10px;
 `;
 const StyledLink = styled.a`
-margin-top: 10px; // Add some space above the price
-color: #000; // Set the text color
+margin-top: 10px;
+color: #000;
 text-decoration: underline;
-  text-decoration-color: black; // Specify the color of the underline
+  text-decoration-color: black;
   text-decoration-thickness: 2px;
-display: block; // Make it a block element
-text-align: center; // Center align the text
-padding: 10px 0; // Add some padding
+display: block;
+text-align: center;
+padding: 10px 0;
 
 `;
 const ServicesPage = () => {

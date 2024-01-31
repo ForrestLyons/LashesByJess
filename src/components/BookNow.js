@@ -19,10 +19,7 @@ const CalendarContainer = styled.div`
   border-radius: 8px;
   opacity: .8;
 
-  @media (max-width: 280px) {
-    max-width: 300px;
-    padding: 10px;
-  }
+
 
   @media (max-width: 390px) {
     max-width: 300px;
@@ -39,6 +36,7 @@ const CalendarContainer = styled.div`
  const MainDiv = styled.div`
  background-color: #FAC0D5;
  padding-top: 200px;
+
  `
 
 const BookNow = () => {

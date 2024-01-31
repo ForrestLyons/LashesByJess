@@ -3,42 +3,47 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 
+
+
 const HomePageContainer = styled.div`
   background-image: url('/homepagefix.jpg');
-  height:950px;
-
+  height: 100%;
   background-size: cover;
   background-position: left center;
   opacity: 0.8;
-
-  /* Set a minimum height to cover the viewport */
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: left;
   text-align: center;
-  padding-top: 300px;
-  overflow: hidden;
+
+
+
   @media (max-width: 390px) {
-    background-size: contain; // Zooms out the image to fit it completely within the container
-    background-position:  top center;
-    background-repeat: no-repeat;
-    height: auto;
+     // Zooms out the image to fit it completely within the container
+
+    padding-top:680px;
+
 
   }
   @media (max-width: 430px) {
-    background-size: contain; // Zooms out the image to fit it completely within the container
+     // Zooms out the image to fit it completely within the container
+
+     padding-top:900px;
+
+  }
+  @media (max-width: 770px) {
+     // Zooms out the image to fit it completely within the container
     background-position:  top center;
     background-repeat: no-repeat;
-    height: auto;
+    height: 100%;
 
   }
   @media (max-width: 280px) {
-    background-size: contain; // Zooms out the image to fit it completely within the container
-    background-position:   center;
+     // Zooms out the image to fit it completely within the container
+    background-position:  top center;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 1000px;
     margin-left: -50px;
 
   }
@@ -53,20 +58,22 @@ const AttentionDiv = styled.div`
     width: 250px; // Adjusted width for smaller screens
     margin-top: -300px; // Adjusted margin-top for smaller screens
     margin-left: 50px;
-
-
   }
   @media (max-width: 280px) {
 
-
+    margin-bottom: 300px; //adjusted margin-top for smaller screens
   }
 
   @media (max-width: 430px) {
     width: 200px; // Adjusted width for smaller screens
-    margin-top: -300px; // Adjusted margin-top for smaller screens
+    margin-top: -980px; // Adjusted margin-top for smaller screens
+    margin-left: 135px;
+
+  }
+
+  @media (max-width: 390px) {
+    margin-top: -1175px;
     margin-left: 90px;
-
-
   }
 `;
 
@@ -84,17 +91,15 @@ const Heading5 = styled.h5`
 
 
   }
+
   @media (max-width: 280px) {
     margin-top: 50px;
-
-
 
   }
 
   @media (max-width: 430px) {
-
-    font-size: 15px;
-
+    font-size: 20px;
+    font-weight: bold;
   }
   &::before,
 
@@ -125,13 +130,16 @@ const Heading1 = styled.h1`
   margin-top: 20px;
   @media (max-width: 390px) {
     font-size: 15px;
+    font-weight: bold;
 
   }
 
   @media (max-width: 430px) {
-    font-size: 15px;
+    font-size: 20px;
+
 
   }
+
 `;
 
 const Paragraph = styled.p`
@@ -144,15 +152,19 @@ const Paragraph = styled.p`
   @media (max-width: 390px) {
   font-size: 15px;
   width: 200px;
+  font-weight: bold;
   }
-  @media (max-width: 430px) {
-  font-size: 15px;
-  width: 200px;
-  }
+
   @media (min-width: 280px) {
   font-size: 15px;
   width: 200px;
   }
+  media (max-width: 430px) {
+
+    font-weight: bold;
+
+  }
+
 `;
 
 const ButtonsContainer = styled.div`
@@ -160,9 +172,7 @@ const ButtonsContainer = styled.div`
   justify-content: center;
   margin-top: 60px;
   @media (max-width: 280px) {
-
     padding-bottom: 20px;
-
   }
 
 `;
@@ -192,14 +202,14 @@ const BookNowButton = styled(StyledLink)`
   @media (max-width: 430px) {
     width: 130px;
     height:50px;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: bold;
 
   }
   @media (max-width: 280px) {
     width: 130px;
     height:40px;
     font-size: 12px;
-
   }
 `;
 
@@ -211,39 +221,43 @@ const LearnMoreButton = styled(StyledLink)`
   opacity: 0.8;
   font-size: 20px;
   @media (max-width: 390px) {
-
       width: 95px;
       height:45px;
       font-size: 12px;
-
     }
   @media (max-width: 430px) {
-
       width: 130px;
       height:50px;
-      font-size: 12px;
-
+      font-size: 13px;
+      font-weight: bold;
     }
   @media (max-width: 280px) {
-
       width: 130px;
       height:40px;
       font-size: 12px;
-
     }
 
 `;
 const MainDiv = styled.div `
-  background-color : #E9DCD4;
-  height: 100%;
+  background-color : #black;
+  height: 1300px;
   width: 100%;
   overflow: hidden;
 
 @media (max-width: 280px) {
+    background-color : black;
+    height: 100%;
 
-      height: 300px;
-      font-size: 12px;
 
+    }
+@media (max-width: 390px) {
+    background-color : black;
+    height: 100%;
+
+    }
+@media (max-width: 430px) {
+    background-color : black;
+    height: 100%;
     }
 
 `
@@ -257,7 +271,7 @@ const HomePage = () => {
       <HomePageContainer>
       <AttentionDiv>
         <Heading5>LASHES BY JESS </Heading5>
-        <Heading1>Enhance your look with our stunning lash extensions</Heading1>
+        <Heading1>Enhance your look with our stunning lash extensions!</Heading1>
         <Paragraph>
           My professional techniques will change the way you feel about yourself!
         </Paragraph>
@@ -265,9 +279,13 @@ const HomePage = () => {
         <BookNowButton to="/bookNow">Book Now</BookNowButton>
             <LearnMoreButton to="/education">Learn More</LearnMoreButton>
         </ButtonsContainer>
+
       </AttentionDiv>
+
     </HomePageContainer>
+
     </MainDiv>
+
     </div>
   );
 }
