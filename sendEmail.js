@@ -3,19 +3,21 @@ const nodemailer = require('nodemailer');
 const sendEmail = async (formData) => {
   // Create a transporter using your email service provider's settings
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: "smtp.hostinger.com", // Corrected the typo here
+    port: 587,
+    secure: false, // use SSL, alternative is port 587 with `secure: false`
     auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
+        user:"forrestjlyons@gmail.com", // Make sure these environment variables are set
+        pass: "Ssskeet007@",
     },
-});
-
-
+    debug: true, // Show debug output
+    logger: true, // Log information in console
+  });
 
   // Setup email data
   const mailOptions = {
-    from: 'jlcaty3@gmail.com',
-    to: formData.email, // Replace with the actual recipient email address
+    from: "forrestjlyons@gmail.com", // Use the email from your environment variable
+    to: formData.email,
     subject: formData.subject,
     text: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
   };
