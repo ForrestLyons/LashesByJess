@@ -5,14 +5,14 @@ const sendEmail = async (formData) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.SMTP_USER, // Ensure these are set in your .env
-      pass: process.env.SMTP_PASSWORD, // App-Specific Password for Gmail
+      user: process.env.REACT_APP_SMTP_USER, // Ensure these are set in your .env
+      pass: process.env.REACT_APP_SMTP_PASSWORD, // App-Specific Password for Gmail
     }
   });
 
   // Setup email data
   const mailOptions = {
-    from: process.env.SMTP_USER, // Match this with the SMTP_USER
+    from: process.env.REACT_APP_SMTP_USER, // Match this with the SMTP_USER
     to: formData.email,
     subject: formData.subject,
     text: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
